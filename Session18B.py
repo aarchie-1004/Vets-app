@@ -4,7 +4,7 @@ from tabulate import tabulate
 class MongoDBHelper:
 
     def __init__(self, collection='customer'):
-        uri = "mongodb+srv://atpl:atpl@cluster0.eh8zx.gcp.mongodb.net/?retryWrites=true&w=majority"
+        uri = "mongodb+srv://aarchie:aarchie@cluster0.vzuenno.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
         client = pymongo.MongoClient(uri)
         self.db = client['gw2023pds1']
         self.collection = self.db[collection]
